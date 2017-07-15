@@ -2,5 +2,7 @@
 info
 src/
 first/node_modules/
-fisrt/.cache/
+first/.cache/
 first/.npmignore
+my-project/
+first/static

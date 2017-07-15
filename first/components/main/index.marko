@@ -5,6 +5,7 @@ class {
     const routes = [
       { path: '/', component: require('../home') },
       { path: '/click-count', component: require('../click-count') },
+      { path: '/list', component: require('../list') },
     ]
 
     const render = Router.renderSync({
@@ -40,6 +41,7 @@ style {
         <ul>
           <router-link path='/'>Home</router-link>
           <router-link path='/click-count'>Here be dragons!</router-link>
+          <router-link path='/list'>List</router-link>
         </ul>
       </div>
     </nav>

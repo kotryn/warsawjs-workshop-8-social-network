@@ -5,6 +5,9 @@ class {
   increment() {
     this.state.count++;
   }
+  decrement() {
+    this.state.count--;
+  }
 }
 
 style {
@@ -28,3 +31,8 @@ style {
 <button.is-danger.button.is-outlined on-click('increment')>
   Click me!
 </button>
+
+<button.is-danger.button.is-outlined on-click('decrement')>
+  Click me!
+</button>
+

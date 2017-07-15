@@ -12,6 +12,10 @@ var marko_template = module.exports = require("marko/src/html").t(__filename),
                   {
                       path: "/click-count",
                       component: require("../click-count")
+                    },
+                  {
+                      path: "/list",
+                      component: require("../list")
                     }
                 ];
 
@@ -58,6 +62,13 @@ function render(input, out, __component, component, state) {
       path: "/click-count",
       renderBody: function renderBody(out) {
         out.w("Here be dragons!");
+      }
+    }, out);
+
+  router_link_tag({
+      path: "/list",
+      renderBody: function renderBody(out) {
+        out.w("List");
       }
     }, out);
 
